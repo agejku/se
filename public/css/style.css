@@ -1,0 +1,266 @@
+@charset "utf-8";
+/*--------------------------------------------------------------------------------------------------
+CSS Styles
+
+version:   1.0
+--------------------------------------------------------------------------------------------------*/
+/*
+--------------------------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Colors */
+body {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    background-color: #CCC;
+    height: 100px;
+    text-align: center;
+
+}
+
+.header p {
+    font-size: 40px;
+    font-style: bold;
+    padding-top: 30px;
+}
+
+.logindata {
+    float: right;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+.logindata p {
+    text-align: right;
+    font-size: 13px;
+}
+
+.login {
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 200px;
+}
+
+.login label {
+    text-align: left;
+    float: left;
+    display: block;
+    width: 100px;
+    padding-left: 100px;
+}
+
+.login .textfield {
+    margin-left: 50%;
+    width: 250px;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.login .button{
+    float: right;
+    margin-right: 162px;
+    width: 100px;
+}
+
+.footer {
+    height: 20px;
+    background-color: #CCC;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+.nav {
+    background-color: #CCC;
+    height: 1000px;
+    width: 170px;
+    float: left;
+    display: block;
+}
+
+.nav a {
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: #000;
+    display: block;
+
+}
+
+.nav a:hover {
+    color: #CCC;
+    background-color: #fff;
+}
+
+.nav a:active {
+    color: #CCC;
+    background-color: #fff;
+}
+
+.content {
+    padding-left: 210px;
+    padding-right: 40px;
+
+}
+
+.content a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: #000;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content a:hover {
+    color: #CCC;
+}
+
+h1 {
+
+    font-size: 30px;
+    font-style: bold;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.content h2 {
+    font-size: 20px;
+    font-style: bold;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+}
+
+p {
+
+}
+
+.search {
+    position: relative;
+    top: 100px;
+    height: 50px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 250px;
+    margin-right: 400px;
+    margin-bottom: 200px;
+}
+
+.search .textfield {
+    width: 250px;
+
+}
+
+.content .searchtitle h2 {
+    position: relative;
+    top: 50px;
+    margin-left: 450px;
+}
+
+.inst {
+    width: 100%;
+}
+
+.inst th {
+    background-color: #cccccc;
+}
+
+.inst .even {
+    background-color: #cceeff;
+}
+
+.top {
+    display: block;
+    padding-top: 30px;
+}
+
+.contact {
+    position: relative;
+    top: 100px;
+    height: 300px;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 250px;
+    margin-right: 400px;
+    margin-bottom: 200px;
+}
+
+.contact .textfield {
+    width: 400px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.contact .textarea {
+    width: 480px;
+    height: 200px;
+    display: block;
+    padding-top: 5px;
+}
+
+.contact .button {
+    width: 100px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.listing {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+    font-size: 14px;
+    margin-right: 50px;
+    margin-top: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.footer {
+
+}

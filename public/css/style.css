@@ -69,7 +69,6 @@ a {
 
 .wrapper {
     height: inherit;
-    text-decoration: none;
 }
 
 .logindata {
@@ -119,13 +118,14 @@ a {
 }
 
 .footer {
-    color: #BBBBBB;
     text-align: center;
     height: 20px;
     padding-top: 10px;
+    font-size: 12px;
 }
 
 .footer a {
+    color: #BBBBBB;
     text-decoration: none;
 }
 
@@ -165,9 +165,15 @@ a {
 }
 
 .content {
-    padding-left: 210px;
+    padding-left: 220px;
     padding-right: 40px;
+}
 
+.content h2 {
+    font-size: 20px;
+    font-style: bold;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .content a {
@@ -183,26 +189,16 @@ a {
     color: #CCC;
 }
 
-.content h2 {
-    font-size: 20px;
-    font-style: bold;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
 .search {
     background: #F0EEEF;
     height: 70px;
     width: 450px;
     text-align: center;
-    padding-top: 50px;
-    padding-left: 30px;
     position: relative;
     text-align: center;
     padding-top: 30px;
+    padding-left: 30px;
     padding-bottom: 30px;
-    margin-left: 20%;
-    margin-bottom: 200px;
 }
 .search .textfield {
     width: 300px;
@@ -215,9 +211,9 @@ a {
     margin-top: 15px;
 }
 
-.content .searchtitle h2 {
-    top: 300px;
-    margin-left: 30%;
+table {
+    border: none;
+    background: #FFFFFF;
 }
 
 .inst {
@@ -226,11 +222,15 @@ a {
 
 .inst th {
     background-color: #F0EEEF;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
-.inst tr {
+.inst td {
     height: 30px;
-    margin: auto;
+    padding-left: 25px;
+    padding-top: 5px;
 }
 
 .inst .even {
@@ -243,38 +243,36 @@ a {
 }
 
 .contact {
-    position: relative;
-    top: 100px;
-    height: 300px;
+    background: #F0EEEF;
+    height: 400px;
+    width: 700px;
     text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    border: 1px solid grey;
-    border-radius: 5px 5px 5px 5px;
-    margin-left: 250px;
-    margin-right: 400px;
     margin-bottom: 200px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
 }
 
 .contact .textfield {
-    width: 400px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    border-style: none;
+    float: right;
 }
 
 .contact .textarea {
-    width: 480px;
+    width: 90%;
     height: 200px;
     display: block;
     padding-top: 5px;
+    margin-top: 30px;
+    border-style: none;
 }
 
 .contact .button {
     width: 100px;
-    float: right;
-    margin-right: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .listing {

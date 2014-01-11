@@ -24,24 +24,52 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
     vertical-align: baseline;
 }
 
-/* Colors */
-body {
+html, body {
     background-color: #ffffff;
     height: 100%;
     width: 100%;
 }
 
-.header {
-    background-color: #CCC;
-    height: 100px;
-    text-align: center;
 
+h1 {
+    font-size: 30px;
+    font-style: bold;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-style: none;
+    padding: 10px 10px 10px 10px;
+    border-bottom: 2px solid #BAB9BA;
+}
+
+.header {
+    background: #d35400;
+    border-bottom: 3px solid #c54e00;
+    color: #FFFFFF;
+    height: 145px;
+    text-align: center;
 }
 
 .header p {
-    font-size: 40px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 42px;
     font-style: bold;
-    padding-top: 30px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.wrapper {
+    height: inherit;
+    text-decoration: none;
 }
 
 .logindata {
@@ -56,12 +84,12 @@ body {
 }
 
 .login {
-    height: 100px;
+    background: #F0EEEF;
+    height: 150px;
+    width: 450px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border: 1px solid grey;
-    border-radius: 5px 5px 5px 5px;
+    padding-top: 50px;
+    padding-left: 30px;
     margin-top: 200px;
     margin-left: 400px;
     margin-right: 400px;
@@ -73,61 +101,62 @@ body {
     float: left;
     display: block;
     width: 100px;
-    padding-left: 100px;
+    padding-left: 20px;
 }
 
 .login .textfield {
-    margin-left: 50%;
-    width: 250px;
+    margin-left: 30%;
+    height: 20px;
+    width: 270px;
     display: block;
     margin-bottom: 20px;
-
+    border-style: none;
 }
 
 .login .button{
-    float: right;
-    margin-right: 162px;
     width: 100px;
+    margin-left: 20px;
 }
 
 .footer {
+    color: #BBBBBB;
+    text-align: center;
     height: 20px;
-    background-color: #CCC;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .footer a {
-    padding-left: 10px;
     text-decoration: none;
-    color: #000;
 }
 
 .footer a:hover {
-    color: #fff;
+    color: #000000;
+}
+
+.footer a:visited {
+    color: #BBBBBB;
 }
 
 .nav {
-    background-color: #CCC;
-    height: 1000px;
+    background: #383838;
+    height: 100%;
     width: 170px;
     float: left;
-    display: block;
 }
 
 .nav a {
+    color: #E3E2E1;
     text-decoration: none;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    color: #000;
     display: block;
-
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .nav a:hover {
-    color: #CCC;
-    background-color: #fff;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .nav a:active {
@@ -154,49 +183,41 @@ body {
     color: #CCC;
 }
 
-h1 {
-
-    font-size: 30px;
-    font-style: bold;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
 .content h2 {
     font-size: 20px;
     font-style: bold;
     padding-top: 40px;
     padding-bottom: 30px;
-
-}
-
-p {
-
 }
 
 .search {
+    background: #F0EEEF;
+    height: 70px;
+    width: 450px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 30px;
     position: relative;
-    top: 100px;
-    height: 50px;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    border: 1px solid grey;
-    border-radius: 5px 5px 5px 5px;
-    margin-left: 250px;
-    margin-right: 400px;
+    margin-left: 20%;
     margin-bottom: 200px;
 }
-
 .search .textfield {
-    width: 250px;
+    width: 300px;
+    height: 30px;
+    border-style: none;
+}
 
+.search .button {
+    width: 100px;
+    margin-top: 15px;
 }
 
 .content .searchtitle h2 {
-    position: relative;
-    top: 50px;
-    margin-left: 450px;
+    top: 300px;
+    margin-left: 30%;
 }
 
 .inst {
@@ -204,11 +225,16 @@ p {
 }
 
 .inst th {
-    background-color: #cccccc;
+    background-color: #F0EEEF;
+}
+
+.inst tr {
+    height: 30px;
+    margin: auto;
 }
 
 .inst .even {
-    background-color: #cceeff;
+    background-color: rgba(237, 94, 0, 0.25);
 }
 
 .top {
@@ -252,15 +278,10 @@ p {
 }
 
 .listing {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid grey;
-    border-radius: 5px 5px 5px 5px;
+    background: none repeat scroll 0 0 #F0EEEF;
     font-size: 14px;
-    margin-right: 50px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 80%;
     padding: 10px 10px 10px 10px;
-}
-
-.footer {
-
 }

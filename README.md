@@ -30,6 +30,11 @@ The names of these packages depend on the Linux distribution in use. On `Ubuntu`
     apt-get update >/dev/null 2>&1
     sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y --force-yes apache2 mysql-server-5.5 libapache2-mod-auth-mysql php5-mysql php5 libapache2-mod-php5 php5-mcrypt >/dev/null 2>&1
 
+To initialize the database execute:
+
+    mysql -uroot -e "CREATE DATABASE mydb;",
+    mysql -uroot mydb < mydb.sql
+
 Now you have to copy the contents of the project to the apache server webroot e.g.:
 
     sudo cp /path/to/project/se/* /var/www/

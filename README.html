@@ -1,0 +1,50 @@
+<h1>SWE Project: Advisor Matcher</h1>
+<h2>Setup</h2>
+<h3>Vagrant</h3>
+<p>This is the easiest way if you have <code>VirtualBox</code> and <code>Vagrant</code> installed.
+
+</p>
+<p>First checkout the Github repository:
+
+</p>
+<pre><code>git <span class="keyword">clone</span> https:<span class="comment">//github.com/agejku/se</span>
+cd se/</code></pre>
+<p>Start the virtual machine with:
+
+</p>
+<pre><code><span class="title">vagrant</span> up</code></pre>
+<p>This may take some time if you dont have the virtual machine (~300MB) donwloaded. After the initialization of the machine has ended you can access <code>Advisor Matcher</code> via typing <code>http://localhost:8080</code> into your browser.
+
+</p>
+<h3>Manual (Linux)</h3>
+<p>You will have to install the following software packages with the package manager of your choice:
+
+</p>
+<ul>
+<li>apache2</li>
+<li>php5 + php_mod for apache</li>
+<li>mysql</li>
+</ul>
+<p>The names of these packages depend on the Linux distribution in use. On <code>Ubuntu</code> you can use these command to install the dependencies:
+
+</p>
+<pre><code>apt<span class="attribute">-get</span> update &gt;/dev/<span class="built_in">null</span> <span class="number">2</span>&gt;&amp;<span class="number">1</span>
+sudo DEBIAN_FRONTEND=noninteractive apt<span class="attribute">-get</span> install <span class="attribute">-q</span> <span class="attribute">-y</span> -<span class="attribute">-force</span><span class="attribute">-yes</span> apache2 mysql<span class="attribute">-server</span>-<span class="number">5.5</span> libapache2<span class="attribute">-mod</span><span class="attribute">-auth</span><span class="attribute">-mysql</span> php5<span class="attribute">-mysql</span> php5 libapache2<span class="attribute">-mod</span><span class="attribute">-php5</span> php5<span class="attribute">-mcrypt</span> &gt;/dev/<span class="built_in">null</span> <span class="number">2</span>&gt;&amp;<span class="number">1</span></code></pre>
+<p>To initialize the database execute:
+
+</p>
+<pre><code><span class="comment">mysql</span> <span class="literal">-</span><span class="comment">uroot</span> <span class="literal">-</span><span class="comment">e</span> <span class="comment">"CREATE</span> <span class="comment">DATABASE</span> <span class="comment">mydb;"</span>,
+<span class="comment">mysql</span> <span class="literal">-</span><span class="comment">uroot</span> <span class="comment">mydb</span> &lt; <span class="comment">mydb</span>.<span class="comment">sql</code></pre>
+<p>Now you have to copy the contents of the project to the apache server webroot e.g.:
+
+</p>
+<pre><code>su<span class="operator"><span class="keyword">do</span> cp /path/<span class="keyword">to</span>/project/se/* /var/www/</code></pre>
+<p>Now you will be able to access <code>Advisor Matcher</code> by typing <code>http://localhost:80/</code> into your browser.
+
+</p>
+<h3>Manual (Windows)</h3>
+<p>If you want to run <code>Advisor Matcher</code> in a Windows environment it is recommended to install <a href="http://www.apachefriends.org/en/xampp-windows.html">XAMPP</a>. For instructions on how to install XAMPP visit this <a href="http://www.wikihow.com/Install-XAMPP-for-Windows">tutorial</a>.
+
+</p>
+<p>After installing the software stack you will have to copy the contents of the project into the <code>htdocs</code> folder. The location of this folder depends on your setup.
+</p>

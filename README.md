@@ -21,9 +21,9 @@ This may take some time if you dont have the virtual machine (~300MB) donwloaded
 
 You will have to install the following software packages with the package manager of your choice:
 
-    + apache2
-    + php5 + php_mod for apache
-    + mysql
++ apache2
++ php5 + php_mod for apache
++ mysql
 
 The names of these packages depend on the Linux distribution in use. On `Ubuntu` you can use these command to install the dependencies:
 

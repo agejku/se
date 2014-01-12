@@ -16,7 +16,7 @@ class DB
     public function getConnection($host, $dbname, $pwd)
     {
         if (!$this->connection) {
-            $this->connection = new mysqli('localhost', 'root', '', 'visitorMatcher', '3306');
+            $this->connection = new mysqli('localhost', 'root', '', 'mydb', '8889');
             if ($this->connection->connect_errno) {
                 echo "Failed to connect to MySQL: (" . $this->connection->connect_errno . ") " . $this->connection->connect_error;
             }

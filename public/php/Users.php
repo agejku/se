@@ -11,8 +11,8 @@ class Users {
 
     private $db;
 
-    public function __construct($db){
-        $this->db=$db;
+    public function __construct(){
+        $this->db=mysqli_connect('localhost','root', 'root', 'mydb', '8889');
     }
 
     public function getUsers(){
@@ -23,10 +23,11 @@ class Users {
     }
 
     public function getUserById($id){
-         if(!$res=$this->db->query('SELECT * FROM Users WHERE id = "' . $id . '"')){
-             echo "Operation getUserById failed: (" . $this->db->errno . ") " . $this->db->error;
-         }else
-             return $res;
+        $rs= $this->db->query('SELECT * FROM Users WHERE id = "' . $id . '";');
+        while ($row = $rs->fetch_row()) {
+            return $row;
+        }
+        return false;
     }
     public function createUser(User $user){
        if(!$this->db->query('INSERT INTO Users("id", "name", "email", "details", "pwd") VALUES '
@@ -38,11 +39,23 @@ class Users {
 
     }
 
-    public function login(User $user){
-        if(!$this->getUserById($user->getId())){
-            return false;
+
+    public function getUserByName($name){
+
+       $rs= $this->db->query('SELECT * FROM Users WHERE name = "' . $name . '";');
+        while ($row = $rs->fetch_row()) {
+            return $row[7];
         }
-        return true;
+        return false;
+    }
+
+
+
+
+    public function login($name, $pwd){
+       if(md5($pwd) == $this->getUserByName($name))
+           return true;
+        return false;
 
     }
     public function logout(User $user){

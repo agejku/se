@@ -10,22 +10,26 @@ class Projects {
 
     private $db;
 
-    public function __construct($db){
-        $this->db=$db;
+    public function __construct(){
+        $this->db=mysqli_connect('localhost','root', 'root', 'mydb', '8889');;
     }
 
     public function getProjects(){
-         if(!$res=$this->db->query('SELECT * FROM Projects;')){
-             echo "Operation getProjects failed: (" . $this->db->errno . ") " . $this->db->error;
-         } else
-             return $res;
+        $data=array();
+        $rs= $this->db->query('SELECT * FROM Projects;');
+        while ($row = $rs->fetch_row()) {
+            $data[]=$row;
+        }
+        return $data;
     }
 
     public function getProjectById($id){
-        if(!$res=$this->db->query('SELECT * FROM Projects WHERE id = "' . $id .'"')){
-            echo "Operation getProjectsById failed: (" . $this->db->errno . ") " . $this->db->error;
-        } else
-            return $res;
+        $data=array();
+        $rs= $this->db->query('SELECT * FROM Projects WHERE id = "' . $id .'"');
+        while ($row = $rs->fetch_row()) {
+            $data[]=$row;
+        }
+        return $data;
     }
 
     public function createProject(Project $project){
@@ -41,7 +45,5 @@ class Projects {
         }
         return true;
     }
-    public function updateProject($header, $data){
-        if(!$this->db->query('UPDATE Projects SET '))
-    }
+
 }

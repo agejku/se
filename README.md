@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #SWE Project: Advisor Matcher
 
 ##Setup
@@ -46,3 +47,7 @@ Now you will be able to access `Advisor Matcher` by typing `http://localhost:80/
 If you want to run `Advisor Matcher` in a Windows environment it is recommended to install [XAMPP](http://www.apachefriends.org/en/xampp-windows.html). For instructions on how to install XAMPP visit this [tutorial](http://www.wikihow.com/Install-XAMPP-for-Windows).
 
 After installing the software stack you will have to copy the contents of the project into the `htdocs` folder. The location of this folder depends on your setup.
+=======
+se
+==
+>>>>>>> f410ff5f78e439b51b69a77f2902956287e5389a

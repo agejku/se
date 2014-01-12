@@ -32,7 +32,7 @@
     <div class="nav">
         <a href="home.html">Home</a>
         <a href="#">Search</a>
-        <a href="browse.html">Browse</a>
+        <a href="browse.php">Browse</a>
         <a href="news.html">News</a>
         <a href="contact.html">Contact</a>
         <a href="../index.html">Logout</a>
